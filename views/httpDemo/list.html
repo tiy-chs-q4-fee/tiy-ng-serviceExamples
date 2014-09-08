@@ -1,0 +1,7 @@
+<h2>Posts</h2>
+<p><a href="#/httpSvc/new">New Post</a></p>
+<article ng-repeat="p in posts">
+    <h3>{{p.title}}</h3>
+    <p>{{p.content}} ... <a href="#/blogHttp/{{p._id}}">read more >></a></p>
+
+</article>

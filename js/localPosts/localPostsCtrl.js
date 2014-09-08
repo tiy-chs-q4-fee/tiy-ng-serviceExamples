@@ -21,14 +21,17 @@ angular.module("tiy-localService")
 
         $rootScope.$on("post:added", function () {
             $scope.posts = localPostsSvc.getPosts();
+
         });
 
         $rootScope.$on("post:updated", function () {
             $scope.posts = localPostsSvc.getPosts();
+
         });
 
         $rootScope.$on("post:deleted", function () {
             $scope.posts = localPostsSvc.getPosts();
+
         })
 
     });
