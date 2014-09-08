@@ -1,0 +1,7 @@
+<form action="" ng-submit="editPost(singlePost)">
+    <input type="text" ng-model="singlePost.title" value="singlePost.title"/>
+    <textarea name="postContent" id="" cols="30" rows="10" ng-model="singlePost.content">
+        {{singlePost.content}}
+    </textarea>
+    <button type="submit">Update Post</button>
+</form>
