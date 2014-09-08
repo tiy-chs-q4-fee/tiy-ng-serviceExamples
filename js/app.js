@@ -15,12 +15,6 @@
             controller: "homeCtrl"
         })
 
-
-        .when("/blogResource", {
-            templateUrl: "views/ngResourceDemo/list.html",
-            controller: "resourcePostsCtrl"
-        })
-
         .when("/blogCookie", {
             templateUrl: "views/cookieDemo/list.html",
             controller: "cookiePostsCtrl"
@@ -32,4 +26,3 @@
 
 
 angular.module("tiy-cookieService",["ngCookies"]);
-angular.module("tiy-resourceService",["ngResource"]);

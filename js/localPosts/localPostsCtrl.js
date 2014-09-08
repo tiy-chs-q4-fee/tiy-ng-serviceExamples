@@ -4,7 +4,7 @@ angular.module("tiy-localService")
         $scope.posts = localPostsSvc.getPosts();
 
         $scope.singlePost = localPostsSvc.getPost($routeParams.idx);
-
+        console.log($scope.singlePost);
         $scope.addPost = function (post) {
             localPostsSvc.addPost(post);
             $location.path("/blogLocal");
@@ -32,6 +32,6 @@ angular.module("tiy-localService")
         $rootScope.$on("post:deleted", function () {
             $scope.posts = localPostsSvc.getPosts();
 
-        })
+        });
 
     });
