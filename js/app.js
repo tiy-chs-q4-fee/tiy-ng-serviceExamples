@@ -20,10 +20,7 @@
             templateUrl: "views/ngResourceDemo/list.html",
             controller: "resourcePostsCtrl"
         })
-        .when("/blogRestangular", {
-            templateUrl: "views/restangularDemo/list.html",
-            controller: "restangularPostsCtrl"
-        })
+
         .when("/blogCookie", {
             templateUrl: "views/cookieDemo/list.html",
             controller: "cookiePostsCtrl"
@@ -36,5 +33,3 @@
 
 angular.module("tiy-cookieService",["ngCookies"]);
 angular.module("tiy-resourceService",["ngResource"]);
-
-angular.module("tiy-restangularService",["restangular"]);

@@ -1,0 +1,7 @@
+<h2>Posts</h2>
+<p><a href="#/restangularblog/new">Create New Post</a></p>
+<article ng-repeat="item in raPosts">
+    <h3>{{item.title}}</h3>
+    <p>{{item.content.substring(0, 255)}} ... <a href="#/blogRestangular/{{item._id}}">View More</a></p>
+    <p><a href="#/blogRestangular/{{item._id}}/edit">edit</a> | <a href="" ng-click="removePost(item)">delete</a></p>
+</article>
