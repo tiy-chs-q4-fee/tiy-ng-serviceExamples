@@ -9,11 +9,11 @@ angular.module("tiy-localService",["ngRoute"])
                 templateUrl: "views/localSvcDemo/create.html",
                 controller: "localPostsCtrl"
             })
-            .when("/blogLocal/:idx", {
+            .when("/blogLocal/:index", {
                 templateUrl: "views/localSvcDemo/show.html",
                 controller: "localPostsCtrl"
             })
-            .when("/blogLocal/:idx/edit", {
+            .when("/blogLocal/:index/edit", {
                 templateUrl: "views/localSvcDemo/edit.html",
                 controller: "localPostsCtrl"
             });

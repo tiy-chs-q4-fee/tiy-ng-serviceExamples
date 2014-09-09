@@ -11,7 +11,7 @@ angular.module("tiy-httpService")
 
         var getPost = function (id) {
             return $http.get(urlBase + "/" + id);
-        }
+        };
 
         var addPost = function (post) {
             return $http.post(urlBase, post).then(function (response) {
@@ -24,14 +24,14 @@ angular.module("tiy-httpService")
             return $http.put(urlBase + "/" + post._id, post).then(function (response) {
                 $rootScope.$broadcast("post:updated");
                 $log.info("post:updated");
-            })
+            });
         };
 
         var deletePost = function (id) {
             return $http.delete(urlBase + "/" + id).then(function (response) {
                 $rootScope.$broadcast("post:deleted");
                 $log.info("post:deleted");
-            })
+            });
         };
 
         return {
@@ -41,5 +41,5 @@ angular.module("tiy-httpService")
             updatePost: updatePost,
             removePost: deletePost
         };
-        
+
     });

@@ -4,7 +4,10 @@
      "tiy-resourceService",
      "tiy-restangularService",
      "tiy-httpService",
-     "ngRoute"
+     "ngRoute",
+     "feature",
+     "shoplocal",
+     "httpProvider"
      ])
 
 .config(function ($routeProvider) {

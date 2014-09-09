@@ -1,8 +1,8 @@
 angular.module("tiy-httpService")
-    .controller("httpPostsCtrl", function ($scope, $rootScope, $location, $routeParams, httpPostsSvc) {
+    .controller("httpPostsCtrl", function ($scope, $rootScope, $location, $routeParams,$log, httpPostsSvc) {
 
        httpPostsSvc.getPosts().then(function (posts) {
-
+          $log.info(posts);
            $scope.posts = posts.data;
 
         });

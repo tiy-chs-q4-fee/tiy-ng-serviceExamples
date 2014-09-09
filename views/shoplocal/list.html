@@ -1,0 +1,9 @@
+<h2>Items for sale</h2>
+<article ng-repeat="item in items">
+	<h3>{{item.name}}</h3>
+	<img ng-src="{{item.image}}" alt="">
+	<p>{{item.description}}</p>
+	<p>{{item.price | currency}}</p>
+	<a href="#/item/{{$index}}">See More</a>
+	<button ng-click="addItemToCart(item)">add to cart</button>
+</article>

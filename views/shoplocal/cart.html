@@ -1,0 +1,8 @@
+<h2>Items in cart</h2>
+<article ng-repeat="item in cartItems track by $index">
+	<h3>{{item.name}}</h3>
+	<img ng-src="{{item.image}}" alt="">
+	<p>{{item.description}}</p>
+	<p>{{item.price | currency}}</p>
+	<button ng-click="removeItemFromCart($index)">Remove from cart</button>
+</article>

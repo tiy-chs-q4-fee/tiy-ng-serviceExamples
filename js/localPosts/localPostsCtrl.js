@@ -3,14 +3,15 @@ angular.module("tiy-localService")
 
         $scope.posts = localPostsSvc.getPosts();
 
-        $scope.singlePost = localPostsSvc.getPost($routeParams.idx);
-        console.log($scope.singlePost);
+        $scope.singlePost = localPostsSvc.getPost($routeParams.index);
+        console.log("single post",$scope.singlePost);
         $scope.addPost = function (post) {
             localPostsSvc.addPost(post);
             $location.path("/blogLocal");
         };
 
-        $scope.editPost = function (idx, post) {
+        $scope.editPost = function (post) {
+            var idx = $routeParams.idx;
             localPostsSvc.updatePost(idx, post);
             $location.path("/blogLocal");
         };

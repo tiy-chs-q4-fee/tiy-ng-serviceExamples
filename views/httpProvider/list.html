@@ -1,0 +1,9 @@
+<h2>http Posts</h2>
+<p><a href="#/httpProvider/new">Create New Post</a></p>
+
+<article ng-repeat="post in posts">
+  <h2>{{post.title}}</h2>
+  <p>{{post.content}} ... <a href="#/httpProvider/{{post._id}}">Read More</a></p>
+  <p><a href="#/httpProvider/{{post._id}}/edit">Edit</a> | <a href="" ng-click="removePost(post._id)">Delete</a></p>
+  <hr>
+</article>
