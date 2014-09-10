@@ -1,0 +1,8 @@
+<h1>Edit Post</h1>
+<article>
+    <form action="" ng-submit="updatePost(post)">
+    <h2><input type="text" ng-model="post.title" value="{{post.title}}"></h2>
+    <p><textarea name="post.content" id="" cols="30" rows="10" ng-model="post.content">{{post.content}}</textarea></p>
+    <p><button type="submit">Update Post</button></p>
+    </form>
+</article>

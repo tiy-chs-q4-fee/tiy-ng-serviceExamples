@@ -1,7 +1,7 @@
 <h2>Posts</h2>
-<p><a href="#/blogResourceNew">Create New Post</a></p>
+<p><a href="#/blogResource/new">Create New Post</a></p>
 <article ng-repeat="item in posts">
     <h3>{{item.title}}</h3>
     <p>{{item.content.substring(0, 255)}} ... <a href="#/blogResource/{{item._id}}">View More</a></p>
-    <p><a href="#/blogResource/{{item._id}}/edit">edit</a> | <a href="" ng-click="">delete</a></p>
+    <p><a href="#/blogResource/{{item._id}}/edit">edit</a> | <a href="" ng-click="deletePost(item)">delete</a></p>
 </article>

@@ -5,7 +5,7 @@ angular.module("tiy-resourceService",["ngRoute","ngResource"])
                 templateUrl: "views/ngResourceDemo/list.html",
                 controller: "resourcePostsCtrl"
             })
-            .when("/blogResourceNew", {
+            .when("/blogResource/new", {
                 templateUrl: "views/ngResourceDemo/create.html",
                 controller: "resourcePostsCtrl"
             })
@@ -13,9 +13,9 @@ angular.module("tiy-resourceService",["ngRoute","ngResource"])
                 templateUrl: "views/ngResourceDemo/show.html",
                 controller: "resourcePostsCtrl"
             })
-//            .when("/blogResource/:id/edit", {
-//                templateUrl: "views/ngResourceDemo/edit.html",
-//                controller: "resourcePostsCtrl"
-//            });
+            .when("/blogResource/:id/edit", {
+                templateUrl: "views/ngResourceDemo/edit.html",
+                controller: "resourcePostsCtrl"
+            });
 
     });

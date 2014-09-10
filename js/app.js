@@ -7,7 +7,8 @@
      "ngRoute",
      "feature",
      "shoplocal",
-     "httpProvider"
+     "httpProvider",
+     "app.directives"
      ])
 
 .config(function ($routeProvider) {

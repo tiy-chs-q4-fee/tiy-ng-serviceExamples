@@ -24,6 +24,7 @@
     "angular-resource": "~1.2.23",
     "restangular": "~1.4.0",
     "angular-route": "~1.2.23",
-    "angular-cookies": "~1.2.23"
+    "angular-cookies": "~1.2.23",
+    "jquery": "~2.1.1"
   }
 }
